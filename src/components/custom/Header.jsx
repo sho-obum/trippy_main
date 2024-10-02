@@ -59,7 +59,7 @@ function Header() {
         transition={{ duration: 60, ease: 'linear', repeat: Infinity }}
 
       >
-        Hey there! My pyaara Google Cloud Payment and Billing have my features running on localhost, not here. Sadly, the new Places API is a paid service, and my project will continue once my wallet is back in action!
+      Hey there! Due to my pyaara Google Cloud Billing, I can’t continue this service, but all features are running on localhost. The new Places API is paid, so my project will resume once my wallet can afford it.
       </motion.div>
     </div>
     <div className='p-3 shadow-sm flex justify-between items-center px-5 bg-zinc-900 ' >
