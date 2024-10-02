@@ -9,6 +9,8 @@ import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import { useNavigation } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
 
+import { motion } from 'framer-motion';
+
 import {
   Dialog,
   DialogContent,
@@ -48,6 +50,18 @@ function Header() {
   }
 
   return (
+    <div>
+     <div className="banner overflow-hidden whitespace-nowrap w-full bg-white text-black flex items-center relative ">
+      <motion.div
+        className="inline-block text-base"
+        initial={{ x: '100%' }} // Start off-screen to the left
+        animate={{ x: '-100%' }}  // Move to off-screen to the right
+        transition={{ duration: 60, ease: 'linear', repeat: Infinity }}
+
+      >
+        Hey there! My pyaara Google Cloud Payment and Billing have my features running on localhost, not here. Sadly, the new Places API is a paid service, and my project will continue once my wallet is back in action!
+      </motion.div>
+    </div>
     <div className='p-3 shadow-sm flex justify-between items-center px-5 bg-zinc-900 ' >
      <a href='/' className='flex gap-2 justify-center items-center'>
       <img src="src\assets\logo.png" className='w-[12vw]' />
@@ -104,6 +118,7 @@ function Header() {
   </DialogHeader>
 </DialogContent>
 </Dialog>
+    </div>
     </div>
   )
 }
