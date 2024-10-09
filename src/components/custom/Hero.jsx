@@ -8,7 +8,6 @@ function Hero() {
   const [rotate, setRotate] = useState(0);
   const [pupilPosition, setPupilPosition] = useState({ x: 0, y: 0 });
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 425);
-  const [hovered, setHovered] = useState(false); // State for hover
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -109,12 +108,12 @@ function Hero() {
           </div>
         )}
       </div>
-      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-3 px-[10vw] md:text-sm">
+      <div className="border-t-[1px] border-zinc-800 mt-32 flex justify-between items-center py-3 px-[10vw] text-[.8vw]">
         {["from wanderlust to reality.", "from plans to adventures."].map(
           (item, index) => (
             <p
               key={index}
-              className="text-md leading-none text-white "
+              className="text-md leading-none text-white  "
             >
               {item}
             </p>
@@ -122,7 +121,7 @@ function Hero() {
         )}
         <Link to="/create-trip">
        <motion.div
-      className={`px-4 py-2 text-zinc-900 uppercase text-md font-neue bg-white rounded-xl border md:text-sm `}
+      className={`px-4 py-2 text-zinc-900 uppercase font-neue bg-white rounded-xl border  `}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
       >
