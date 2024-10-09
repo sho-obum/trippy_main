@@ -60,6 +60,7 @@ function Header() {
 
       >
        Hey! My Google Cloud billing is paused, so everything’s running on localhost. The Places API is paid, so the project will resume once my wallet’s sorted!
+     
       </motion.div>
     </div>
     <div className='p-3 shadow-sm flex justify-between items-center px-5 bg-zinc-900 ' >
